@@ -60,14 +60,11 @@ def apply_rules(word1, word2):
 def main():
     # input_text = input("Enter the phonetic symbols: ")
     input_text = '''/ˈbɪznəsəz/ /həv/ /ˈɔlˌweɪz/ /sɔt/ /tə/ /meɪk/ /ə/ /ˈprɑfət/, /bət/ /ɪt/ /əz/ /bɪˈkʌmɪŋ/ /ɪnˈkrisɪŋli/ /ˈkɑmən/ /tə/ /hir/ /ˈpipəl/ /tɔk/ /əˈbaʊt/ /ðə/ /ˈsoʊʃəl/ /ˌɑbləˈɡeɪʃənz/ /ðət/ /ˈkʌmpəniz/ /hæv/. /aɪ/ /kəmˈplitli/ /əˈɡri/ /wɪð/ /ði/ /aɪˈdiə/ /ðət/ /ˈbɪznəsəz/ /ʃəd/ /dʊ/ /mɔr/ /fər/ /səˈsaɪəti/ /ðən/ /ˈsɪmpli/ /meɪk/ /ˈmʌni/.
-/ɑn/ /ðə/ /wʌn/ /hænd/, /aɪ/ /ækˈsɛpt/ /ðət/ /ˈbɪznəsəz/ /məst/ /meɪk/ /ˈmʌni/ /ɪn/ /ˈɔrdər/ /tə/ /sərˈvaɪv/ /ɪn/ /ə/ /kəmˈpɛtətɪv/ /wɜrld/. /ɪt/ /simz/ /ˈlɑʤɪkəl/ /ðət/ /ðə/ /praɪˈɔrəti/ /əv/ /ˈɛni/ /ˈkʌmpəni/ /ʃəd/ /bi/ /tə/ /ˈkʌvər/ /ɪts/ /ˈrʌnɪŋ/ /kɑsts/, /sʌʧ/ /əz/ /ɛmˈplɔɪiz/ /ˈweɪʤəz/ /ənd/ /ˈpeɪmənts/ /fər/ /ˈbɪldɪŋz/ /ənd/ /juˈtɪlətiz/. /ɑn/ /tɑp/ /əv/ /ðiz/ /kɑsts/, /ˈkʌmpəniz/ /ˈɔlsoʊ/ /nid/ /tʊ/ /ɪnˈvɛst/ /ɪn/ /ɪmˈpruvmənts/ /ənd/ /ˌɪnəˈveɪʃənz/ /ɪf/ /ðeɪ/ /wɪʃ/ /tə/ /rɪˈmeɪn/ /səkˈsɛsfəl/. 
-/ɪn/ /kənˈkluʒən/, /aɪ/ /bɪˈliv/ /ðət/ /ˈkʌmpəniz/ /ʃəd/ /pleɪs/ /əz/ /mʌʧ/ /ɪmˈpɔrtəns/ /ɑn/ /ðɛr/ /ˈsoʊʃəl/ /riˌspɑnsəˈbɪlətiz/ /əz/ /ðeɪ/ /dʊ/ /ɑn/ /ðɛr/ /fəˈnænʃəl/ /əbˈʤɛktɪvz/.
-'''
-    if "\n\n" in input_text:
-        print("it has !")
+/ɑn/ /ðə/ /wʌn/ /hænd/, /aɪ/ /ækˈsɛpt/ /ðət/ /ˈbɪznəsəz/ /məst/ /meɪk/ /ˈmʌni/ /ɪn/ /ˈɔrdər/ /tə/ /sərˈvaɪv/ /ɪn/ /ə/ /kəmˈpɛtətɪv/ /wɜrld/. /ɪt/ /simz/ /ˈlɑʤɪkəl/ /ðət/ /ðə/ /praɪˈɔrəti/ /əv/ /ˈɛni/ /ˈkʌmpəni/ /ʃəd/ /bi/ /tə/ /ˈkʌvər/ /ɪts/ /ˈrʌnɪŋ/ /kɑsts/, /sʌʧ/ /əz/ /ɛmˈplɔɪiz/ /ˈweɪʤəz/ /ənd/ /ˈpeɪmənts/ /fər/ /ˈbɪldɪŋz/ /ənd/ /juˈtɪlətiz/. /ɑn/ /tɑp/ /əv/ /ðiz/ /kɑsts/, /ˈkʌmpəniz/ /ˈɔlsoʊ/ /nid/ /tʊ/ /ɪnˈvɛst/ /ɪn/ /ɪmˈpruvmənts/ /ənd/ /ˌɪnəˈveɪʃənz/ /ɪf/ /ðeɪ/ /wɪʃ/ /tə/ /rɪˈmeɪn/ /səkˈsɛsfəl/. /ɪf/ /ə/ /ˈkʌmpəni/ /əz/ /əˈneɪbəl/ /tə/ /peɪ/ /ɪts/ /bɪlz/ /ɔr/ /mit/ /ðə/ /ˈʧeɪnʤɪŋ/ /nidz/ /əv/ /ˈkʌstəmərz/, /ˈɛni/ /kənˈsɜrnz/ /əˈbaʊt/ /ˈsoʊʃəl/ /riˌspɑnsəˈbɪlətiz/ /bɪˈkʌm/ /ɪˈrɛləvənt/. /ɪn/ /ˈʌðər/ /wɜrdz/, /ə/ /ˈkʌmpəni/ /kən/ /ˈoʊnli/ /meɪk/ /ə/ /ˈpɑzətɪv/ /ˌkɑntrəˈbjuʃən/ /tə/ /səˈsaɪəti/ /ɪf/ /ɪt/ /əz/ /ɪn/ /ɡʊd/ /fəˈnænʃəl/ /hɛlθ/.
+/ɑn/ /ði/ /ˈʌðər/ /hænd/, /ˈkʌmpəniz/ /ʃəd/ /nɑt/ /bi/ /rʌn/ /wɪð/ /ðə/ /soʊl/ /eɪm/ /əv/ /ˈmæksəˌmaɪzɪŋ/ /ˈprɑfət/; /ðeɪ/ /həv/ /ə/ /ˈwaɪdər/ /roʊl/ /tə/ /pleɪ/ /ɪn/ /səˈsaɪəti/. /wʌn/ /ˈsoʊʃəl/ /ˌɑbləˈɡeɪʃən/ /ðət/ /ˈoʊnərz/ /ənd/ /ˈmænəʤərz/ /həv/ /əz/ /tə/ /trit/ /ðɛr/ /ɛmˈplɔɪiz/ /wɛl/, /ˈræðər/ /ðən/ /ˈɛkˌsplɔɪtɪŋ/ /ðɛm/. /fər/ /ɪɡˈzæmpəl/, /ðeɪ/ /kəd/ /peɪ/ /eɪ/ “/ˈlɪvɪŋ/ /weɪʤ/” /tʊ/ /ɛnˈʃʊr/ /ðət/ /ˈwɜrkərz/ /həv/ /ə/ /ɡʊd/ /ˈkwɑləti/ /əv/ /laɪf/. /aɪ/ /ˈɔlsoʊ/ /laɪk/ /ði/ /aɪˈdiə/ /ðət/ /ˈbɪznəsəz/ /kəd/ /juz/ /ə/ /prəˈpɔrʃən/ /əv/ /ðɛr/ /ˈprɑfɪts/ /tə/ /səˈpɔrt/ /ˈloʊkəl/ /ˈʧɛrətiz/, /ɪnˌvaɪrənˈmɛntəl/ /ˈprɑʤɛkts/ /ɔr/ /ˌɛʤəˈkeɪʃən/ /ɪˈnɪʃətɪvz/. /ˈfaɪnəli/, /ɪnˈstɛd/ /əv/ /ˈtraɪɪŋ/ /tə/ minimise /ðɛr/ /tæks/ /ˈpeɪmənts/ /baɪ/ /ˈjuzɪŋ/ /əˈkaʊntɪŋ/ /ˈlupˌhoʊlz/, /aɪ/ /bɪˈliv/ /ðət/ /ˈkʌmpəni/ /ˈbɔsɪz/ /ʃəd/ /bi/ /ˈhæpi/ /tə/ /kənˈtrɪbjut/ /tə/ /səˈsaɪəti/ /θru/ /ðə/ /tæks/ /ˈsɪstəm/.
+/ɪn/ /kənˈkluʒən/, /aɪ/ /bɪˈliv/ /ðət/ /ˈkʌmpəniz/ /ʃəd/ /pleɪs/ /əz/ /mʌʧ/ /ɪmˈpɔrtəns/ /ɑn/ /ðɛr/ /ˈsoʊʃəl/ /riˌspɑnsəˈbɪlətiz/ /əz/ /ðeɪ/ /dʊ/ /ɑn/ /ðɛr/ /fəˈnænʃəl/ /əbˈʤɛktɪvz/.'''
 
-    paragraphs = input_text.split('\n\n')  # Split input into paragraphs
-    print(len(paragraphs))
+    paragraphs = input_text.split('\n')  # Split input into paragraphs
     for paragraph in paragraphs:
         # Split paragraph into sentences
         sentences = re.split(r'(?<=[.!?])\s+', paragraph)
