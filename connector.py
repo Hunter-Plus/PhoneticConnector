@@ -1,13 +1,14 @@
 import re
 
 # Define
-vowels = ['i', 'ɪ', 'ɛ', 'æ', 'ə', 'ʌ', 'u', 'ʊ', 'ɔ', 'ɑ']
-consonants = ['p', 'b', 't', 'd', 'k', 'g', 'm', 'n', 'ŋ', 'f', 'v',
+vowels = ['i', 'ɪ', 'ɛ', 'æ', 'ə', 'ʌ', 'u', 'ʊ', 'ɔ', 'ɑ', 'e', 'a', 'o', 'ɝ', 'ɚ'] # Also include the first symbol of all the dipthongs and r-colored vowels
+# e for eɪ, a for aɪ and aʊ, o for oʊ
+consonants = ['p', 'b', 't', 'd', 'k', 'g', 'ɡ', 'm', 'n', 'ŋ', 'f', 'v',
               'θ', 'ð', 's', 'z', 'ʃ', 'ʒ', 'ʧ', 'ʤ', 'h', 'r', 'l', 'j', 'w']
-stops_consonants = ['p', 'b', 't', 'd', 'k', 'g']
+stops_consonants = ['p', 'b', 't', 'd', 'k', 'g', 'ɡ']
 lips_consonants = ['b', 'p', 'm', 'f', 'v', 'w']
 teeth_consonants = ['d', 't', 'n', 'l', 'z', 's', 'ʃ', 'ʒ', 'ʧ', 'ʤ', 'j']
-throat_consonants = ['g', 'k', 'h', 'r', 'ŋ']
+throat_consonants = ['g', 'ɡ', 'k', 'h', 'r', 'ŋ']
 
 
 def apply_rules(word1, word2):
@@ -30,12 +31,7 @@ def apply_rules(word1, word2):
         # 2.2: Consecutive consonants are ð or θ
         elif word1[firsr_word_tail] in ['ð', 'θ'] or word2[second_word_start] in ['ð', 'θ']:
             return word1[:firsr_word_tail] + '(' + word1[firsr_word_tail] + word2[second_word_start] + ')' + word2[second_word_start + 1:]
-        # 2.3: Consecutive consonants in same place in the mouth
-        elif (word1[firsr_word_tail] in lips_consonants and word2[second_word_start] in lips_consonants) or (word1[firsr_word_tail] in teeth_consonants and word2[second_word_start] in teeth_consonants) or (word1[firsr_word_tail] in throat_consonants and word2[second_word_start] in throat_consonants):
-            if word1[firsr_word_tail] in stops_consonants:
-                return word1[:firsr_word_tail + 1] + '|' + word2[second_word_start:]
-            return word1[:firsr_word_tail + 1] + '-' + word2[second_word_start:]
-        # 2.4: Specific consonant pairs dtsz+ j
+        # 2.4: Specific consonant pairs dtsz+ j (has a higher priority than 2.3)
         elif word1[firsr_word_tail] == 't' and word2[second_word_start] == 'j':
             return word1[:firsr_word_tail] + '(ʧ)' + word2[second_word_start + 1:]
         elif word1[firsr_word_tail] == 'd' and word2[second_word_start] == 'j':
@@ -44,6 +40,11 @@ def apply_rules(word1, word2):
             return word1[:firsr_word_tail] + '(ʃ)' + word2[second_word_start + 1:]
         elif word1[firsr_word_tail] == 'z' and word2[second_word_start] == 'j':
             return word1[:firsr_word_tail] + '(ʒ)' + word2[second_word_start + 1:]
+        # 2.3: Consecutive consonants in same place in the mouth
+        elif (word1[firsr_word_tail] in lips_consonants and word2[second_word_start] in lips_consonants) or (word1[firsr_word_tail] in teeth_consonants and word2[second_word_start] in teeth_consonants) or (word1[firsr_word_tail] in throat_consonants and word2[second_word_start] in throat_consonants):
+            if word1[firsr_word_tail] in stops_consonants:
+                return word1[:firsr_word_tail + 1] + '|' + word2[second_word_start:]
+            return word1[:firsr_word_tail + 1] + '-' + word2[second_word_start:]
 
     # Rule 3: Connect words when the first ends with a specific vowel and the second starts with a vowel
     elif word1[firsr_word_tail] in vowels and word2[second_word_start] in vowels:
@@ -67,6 +68,9 @@ def main():
     # Insert a blank before , ; to make them can be splited
     input_text = input_text.replace(","," ,")
     input_text = input_text.replace(";"," ;")
+    input_text = input_text.replace("."," .")
+    input_text = input_text.replace("!"," !")
+    input_text = input_text.replace("?"," ?")
     
     paragraphs = input_text.split('\n')  # Split input into paragraphs
     for paragraph in paragraphs:
@@ -97,7 +101,6 @@ def main():
                 connected_sentence += current_word_or_punctuation + ' '
 
                 i += 1
-            # connected_sentence += '.'
             print(connected_sentence.strip())
             
         print()  # Empty line between paragraphs
