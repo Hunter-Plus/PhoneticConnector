@@ -9,7 +9,11 @@ stops_consonants = ['p', 'b', 't', 'd', 'k', 'g', 'ɡ']
 lips_consonants = ['b', 'p', 'm', 'f', 'v', 'w']
 teeth_consonants = ['d', 't', 'n', 'l', 'z', 's', 'ʃ', 'ʒ', 'ʧ', 'ʤ', 'j']
 throat_consonants = ['g', 'ɡ', 'k', 'h', 'r', 'ŋ']
-
+# Single quotation marks are as same as apostrophe, do not use it in the input to aviod troubles, as well as the ellipsis marks
+punctuations = [",", ";", ":", "—", '"', "“", "”", "(", ")", "[", "]", ".", "?", "!"]
+left_blank_punctuations = ["“", "(", "["] # " is special, process it in code
+no_blank_punctuations = ["—", "-"]
+# centre_punctuations = []
 
 def apply_rules(word1, word2):
     firsr_word_tail = -2
@@ -60,17 +64,15 @@ def apply_rules(word1, word2):
 
 def main():
     # input_text = input("Enter the phonetic symbols: ")
-    input_text = '''/ˈbɪznəsəz/ /həv/ /ˈɔlˌweɪz/ /sɔt/ /tə/ /meɪk/ /ə/ /ˈprɑfət/, /bət/ /ɪt/ /əz/ /bɪˈkʌmɪŋ/ /ɪnˈkrisɪŋli/ /ˈkɑmən/ /tə/ /hir/ /ˈpipəl/ /tɔk/ /əˈbaʊt/ /ðə/ /ˈsoʊʃəl/ /ˌɑbləˈɡeɪʃənz/ /ðət/ /ˈkʌmpəniz/ /hæv/. /aɪ/ /kəmˈplitli/ /əˈɡri/ /wɪð/ /ði/ /aɪˈdiə/ /ðət/ /ˈbɪznəsəz/ /ʃəd/ /dʊ/ /mɔr/ /fər/ /səˈsaɪəti/ /ðən/ /ˈsɪmpli/ /meɪk/ /ˈmʌni/.
-/ɑn/ /ðə/ /wʌn/ /hænd/, /aɪ/ /ækˈsɛpt/ /ðət/ /ˈbɪznəsəz/ /məst/ /meɪk/ /ˈmʌni/ /ɪn/ /ˈɔrdər/ /tə/ /sərˈvaɪv/ /ɪn/ /ə/ /kəmˈpɛtətɪv/ /wɜrld/. /ɪt/ /simz/ /ˈlɑʤɪkəl/ /ðət/ /ðə/ /praɪˈɔrəti/ /əv/ /ˈɛni/ /ˈkʌmpəni/ /ʃəd/ /bi/ /tə/ /ˈkʌvər/ /ɪts/ /ˈrʌnɪŋ/ /kɑsts/, /sʌʧ/ /əz/ /ɛmˈplɔɪiz/ /ˈweɪʤəz/ /ənd/ /ˈpeɪmənts/ /fər/ /ˈbɪldɪŋz/ /ənd/ /juˈtɪlətiz/. /ɑn/ /tɑp/ /əv/ /ðiz/ /kɑsts/, /ˈkʌmpəniz/ /ˈɔlsoʊ/ /nid/ /tʊ/ /ɪnˈvɛst/ /ɪn/ /ɪmˈpruvmənts/ /ənd/ /ˌɪnəˈveɪʃənz/ /ɪf/ /ðeɪ/ /wɪʃ/ /tə/ /rɪˈmeɪn/ /səkˈsɛsfəl/. /ɪf/ /ə/ /ˈkʌmpəni/ /əz/ /əˈneɪbəl/ /tə/ /peɪ/ /ɪts/ /bɪlz/ /ɔr/ /mit/ /ðə/ /ˈʧeɪnʤɪŋ/ /nidz/ /əv/ /ˈkʌstəmərz/, /ˈɛni/ /kənˈsɜrnz/ /əˈbaʊt/ /ˈsoʊʃəl/ /riˌspɑnsəˈbɪlətiz/ /bɪˈkʌm/ /ɪˈrɛləvənt/. /ɪn/ /ˈʌðər/ /wɜrdz/, /ə/ /ˈkʌmpəni/ /kən/ /ˈoʊnli/ /meɪk/ /ə/ /ˈpɑzətɪv/ /ˌkɑntrəˈbjuʃən/ /tə/ /səˈsaɪəti/ /ɪf/ /ɪt/ /əz/ /ɪn/ /ɡʊd/ /fəˈnænʃəl/ /hɛlθ/.
-/ɑn/ /ði/ /ˈʌðər/ /hænd/, /ˈkʌmpəniz/ /ʃəd/ /nɑt/ /bi/ /rʌn/ /wɪð/ /ðə/ /soʊl/ /eɪm/ /əv/ /ˈmæksəˌmaɪzɪŋ/ /ˈprɑfət/; /ðeɪ/ /həv/ /ə/ /ˈwaɪdər/ /roʊl/ /tə/ /pleɪ/ /ɪn/ /səˈsaɪəti/. /wʌn/ /ˈsoʊʃəl/ /ˌɑbləˈɡeɪʃən/ /ðət/ /ˈoʊnərz/ /ənd/ /ˈmænəʤərz/ /həv/ /əz/ /tə/ /trit/ /ðɛr/ /ɛmˈplɔɪiz/ /wɛl/, /ˈræðər/ /ðən/ /ˈɛkˌsplɔɪtɪŋ/ /ðɛm/. /fər/ /ɪɡˈzæmpəl/, /ðeɪ/ /kəd/ /peɪ/ /eɪ/ “/ˈlɪvɪŋ/ /weɪʤ/” /tʊ/ /ɛnˈʃʊr/ /ðət/ /ˈwɜrkərz/ /həv/ /ə/ /ɡʊd/ /ˈkwɑləti/ /əv/ /laɪf/. /aɪ/ /ˈɔlsoʊ/ /laɪk/ /ði/ /aɪˈdiə/ /ðət/ /ˈbɪznəsəz/ /kəd/ /juz/ /ə/ /prəˈpɔrʃən/ /əv/ /ðɛr/ /ˈprɑfɪts/ /tə/ /səˈpɔrt/ /ˈloʊkəl/ /ˈʧɛrətiz/, /ɪnˌvaɪrənˈmɛntəl/ /ˈprɑʤɛkts/ /ɔr/ /ˌɛʤəˈkeɪʃən/ /ɪˈnɪʃətɪvz/. /ˈfaɪnəli/, /ɪnˈstɛd/ /əv/ /ˈtraɪɪŋ/ /tə/ /ðɛr/ /tæks/ /ˈpeɪmənts/ /baɪ/ /ˈjuzɪŋ/ /əˈkaʊntɪŋ/ /ˈlupˌhoʊlz/, /aɪ/ /bɪˈliv/ /ðət/ /ˈkʌmpəni/ /ˈbɔsɪz/ /ʃəd/ /bi/ /ˈhæpi/ /tə/ /kənˈtrɪbjut/ /tə/ /səˈsaɪəti/ /θru/ /ðə/ /tæks/ /ˈsɪstəm/.
-/ɪn/ /kənˈkluʒən/, /aɪ/ /bɪˈliv/ /ðət/ /ˈkʌmpəniz/ /ʃəd/ /pleɪs/ /əz/ /mʌʧ/ /ɪmˈpɔrtəns/ /ɑn/ /ðɛr/ /ˈsoʊʃəl/ /riˌspɑnsəˈbɪlətiz/ /əz/ /ðeɪ/ /dʊ/ /ɑn/ /ðɛr/ /fəˈnænʃəl/ /əbˈʤɛktɪvz/.'''
+    input_text = '''/ə/ /laɪn/ /breɪk/ /wɪl/ /bi/ /ˈædəd/ /tə/ /ði/ /ɛnd/ /əv/ /iʧ/ /ˈsɛntəns/. /ˈpɪriəd/ /əz/ /ðə/ /moʊst/ /ˈkɑmən/ /ɛnd/ /əv/ /ˈsɛntənsəz/, /bət/ /ði/ /əˈpɑstrəfi/ /mɑrks/ /ˈɔlsoʊ/ /juz/ /ðə/ /seɪm/ /ˈsɪmbəl/. /haʊ/ /tə/ /meɪk/ /ðəm/ /kəˈrɛkt/? /wi/ /doʊnt/! /soʊ/, /dʊ/ /nɑt/ /juz/ /əˈpɑstrəfi/ /mɑrks/.
+/kwoʊˈteɪʃən/ /mɑrks/ /ər/ /əˈnʌðər/ "/ɡreɪ/ /zoʊn/" /bɪˈkəz/ /ðeɪ/ /ˈɔlsoʊ/ /həv/ /ə/ /ˈsɪŋɡəl/ /ˈvɜrʒən/ /wɪʧ/ /ˈjusəz/ /ðə/ /seɪm/ /ˈsɪmbəl/ /əz/ /ði/ /əˈpɑstrəfi/. /wi/ /doʊnt/ /ˈprɑˌsɛs/ /ðə/ /ˈsɪŋɡəl/ /ˈvɜrʒən/, /əz/ /wɛl/ /əz/ /əˈpɑstrəfi/ /mɑrks/, /tə/ /ˈsɪmpləˌfaɪ/ /ðə/ /ˈproʊˌɡræmz/ /aɪ/oʊ/.
+/wɜrd/ /kəˈnɛkʃən/ /ˈkænɑt/ /ˈhæpən/ /əˈkrɔs/ /ˈkɑməz/, /ˈkoʊlənz/, /ənd/ /ˈbrækəts/. /ðɪs/ /ˈproʊˌɡræm/ /kən/ /ˈprɑˌsɛs/ /ðɛm/; /jʊ/ /ʃəd/ /juz/ /ðəm/ /kəˈrɛktli/ /ɪn/ /ði/ /ˈɪnˌpʊt/. /ðər/ /ər/ /tu/ /taɪps/ /əv/ /ˈbrækəts/: /ðə/ /lɛft/ /wʌnz/ /ənd/ /ðə/ /raɪt/ /wʌnz/ (/raʊnd/ /ɔr/ /skwɛr/). /ə/ /blæŋk/ /wɪl/ /əˈpɪr/ /ɪn/ /ðə/ /raɪt/ /pleɪs/ [/lɛft/ /ɔr/ /raɪt/] /ɪn/ /ði/ /ˈaʊtˌpʊt/.
+/ˈhaɪfənz/ /ər/ /ˈɔlˌweɪz/ /ɪn/-/bɪˈtwin/ /ˈlɛtərz/. /bət/ /ðə/ /ˈsɪmələr/ /ˌpʌŋkʧuˈeɪʃən/-/ˈdæʃɪz/ /ər/ /səmˈtaɪmz/ /ˈrɪtən/ /ðə/ /seɪm/ /əz/ /ˈhaɪfənz/.
+"/ɡoʊ/ /fər/ /ɪt/," /ɪt/ /sɛd/.'''
 
-    # Insert a blank before , ; to make them can be splited
-    input_text = input_text.replace(","," ,")
-    input_text = input_text.replace(";"," ;")
-    input_text = input_text.replace("."," .")
-    input_text = input_text.replace("!"," !")
-    input_text = input_text.replace("?"," ?")
+    # Insert one or two blanks besides punctuations to make them splitable
+    for punctuation in punctuations:
+        input_text = input_text.replace(punctuation," "+punctuation+" ")
     
     paragraphs = input_text.split('\n')  # Split input into paragraphs
     for paragraph in paragraphs:
@@ -79,6 +81,7 @@ def main():
         for sentence in sentences:
             connected_sentence = ""
             words_and_punctuations = sentence.split()
+            unclosed_quotation_marks = False # The indicator to show there is a left "
             i = 0
             while i < len(words_and_punctuations):
                 current_word_or_punctuation = words_and_punctuations[i]
@@ -98,12 +101,30 @@ def main():
                             current_word_or_punctuation += words_and_punctuations[j]
                             i = j
                             break
-                connected_sentence += current_word_or_punctuation + ' '
-
+                if current_word_or_punctuation[-1] == '"':
+                    if unclosed_quotation_marks == False: 
+                        connected_sentence += current_word_or_punctuation[:-2] + ' "'
+                        unclosed_quotation_marks = True
+                    else:
+                        if connected_sentence.endswith(' '):
+                            connected_sentence = connected_sentence[:-1] + current_word_or_punctuation + ' '
+                        else:
+                            connected_sentence += current_word_or_punctuation + ' '
+                        unclosed_quotation_marks = False
+                elif current_word_or_punctuation[-1] in left_blank_punctuations:
+                        connected_sentence += current_word_or_punctuation[:-2] + ' ' + current_word_or_punctuation[-1]
+                elif current_word_or_punctuation[-1] in no_blank_punctuations:
+                        connected_sentence += current_word_or_punctuation
+                else:
+                    if connected_sentence.endswith(' ') and not current_word_or_punctuation.startswith("/"):
+                        # No blank between two punctuations
+                        connected_sentence = connected_sentence[:-1] + current_word_or_punctuation + ' '
+                    else:
+                        connected_sentence += current_word_or_punctuation + ' '
                 i += 1
             print(connected_sentence.strip())
             
-        print()  # Empty line between paragraphs
+        # print()  # Empty line between paragraphs
 
 
 if __name__ == "__main__":
