@@ -103,16 +103,17 @@ def main():
                             break
                 if current_word_or_punctuation[-1] == '"':
                     if unclosed_quotation_marks == False: 
-                        connected_sentence += current_word_or_punctuation[:-2] + ' "'
+                        connected_sentence += current_word_or_punctuation[:-1] + ' "'
                         unclosed_quotation_marks = True
                     else:
-                        if connected_sentence.endswith(' '):
+                        if connected_sentence.endswith(' ') and current_word_or_punctuation == '"':
+                            # No blank between two punctuations( for ")
                             connected_sentence = connected_sentence[:-1] + current_word_or_punctuation + ' '
                         else:
                             connected_sentence += current_word_or_punctuation + ' '
                         unclosed_quotation_marks = False
                 elif current_word_or_punctuation[-1] in left_blank_punctuations:
-                        connected_sentence += current_word_or_punctuation[:-2] + ' ' + current_word_or_punctuation[-1]
+                        connected_sentence += current_word_or_punctuation[:-1] + ' ' + current_word_or_punctuation[-1]
                 elif current_word_or_punctuation[-1] in no_blank_punctuations:
                         connected_sentence += current_word_or_punctuation
                 else:
