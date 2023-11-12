@@ -10,6 +10,12 @@ All English learners who want to master America Accent and already have a decent
 2.Replace the string of input_text between ''' by the result of toPhonetics<br>
 3.Run this script by Python3, you will get the connected version printed by the program<br>
 
+# Legend
+- '-' : General linkings. Consonant-Vowel linking, Consonant-Consonant linking when they are different and the first one is not a Stops consonant.
+- '()' : Special th sounds linking, Consonant-Consonant when they are identical and Special Consonant-Consonant +/j/ combinations.
+- '|' : Consonant-Consonant when the first one is a Stops consonant.
+- '-w-' and '-j-': Vowel-Vowel linking while glides added.
+
 # Example
 ## The text(paragraphs are separated by line breaks):
 
