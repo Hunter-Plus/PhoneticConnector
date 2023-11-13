@@ -42,7 +42,7 @@ In conclusion, I believe that companies should place as much importance on their
 /aɪ/ /kəmˈplitli-j-əˈɡri/ /wɪ(ð)i-j-aɪˈdiə/ /ðət/ /ˈbɪznəsəz-ʃə(d)ʊ/ /mɔr/ /fər/ /səˈsaɪəti/ /ðən-sɪmpli/ /meɪk/ /ˈmʌni/.<br><br>
 
 /ɑ(nð)ə/ /wʌn/ /hænd/, /aɪ-j-ækˈsɛp(tð)ət/ /ˈbɪznəsəz/ /məst/ /meɪk/ /ˈmʌni-j-ɪn-ɔrdər/ /tə/ /sərˈvaɪv-ɪn-ə/ /kəmˈpɛtətɪv-wɜrld/.<br>
-/ɪt|simz-lɑʤɪkə(lð)ə(tð)ə/ /praɪˈɔrəti-j-əv-ɛni/ /ˈkʌmpəni/ /ʃəd/ /bi/ /tə/ /ˈkʌvər-ɪts/ /ˈrʌnɪŋ-kɑsts/, /sʌʧ-əz-ɛmˈplɔɪiz/ /ˈweɪʤəz-ənd/ /ˈpeɪmənts/ /fər/ /ˈbɪldɪŋz-ən(ʤ)uˈtɪlətiz/.<br><br>
+/ɪt|simz-lɑʤɪkə(lð)ə(tð)ə/ /praɪˈɔrəti-j-əv-ɛni/ /ˈkʌmpəni/ /ʃəd/ /bi/ /tə/ /ˈkʌvər-ɪts/ /ˈrʌnɪŋ-kɑsts/, /sʌʧ-əz-ɛmˈplɔɪiz/ /ˈweɪʤəz-ənd/ /ˈpeɪmənts/ /fər/ /ˈbɪldɪŋz-ən(ʤ)uˈtɪlətiz/.<br>
 /ɑn-tɑp-ə(vð)iz/ /kɑsts/, /ˈkʌmpəniz-ɔlsoʊ/ /nid|tʊ-w-ɪnˈvɛst-ɪn-ɪmˈpruvmənts-ənd-ɪnəˈveɪʃənz-ɪ(fð)eɪ/ /wɪʃ-tə/ /rɪˈmeɪn-səkˈsɛsfəl/.<br>
 /ɪf-ə/ /ˈkʌmpəni-j-əz-əˈneɪbəl-tə/ /peɪ-j-ɪts/ /bɪlz-ɔr/ /mi(tð)ə/ /ˈʧeɪnʤɪŋ/ /nidz-əv/ /ˈkʌstəmərz/, /ˈɛni/ /kənˈsɜrnz-əˈbaʊt|soʊʃəl/ /riˌspɑnsəˈbɪlətiz/ /bɪˈkʌm-ɪˈrɛləvənt/.<br>
 /ɪn-ʌðər/ /wɜrdz/, /ə/ /ˈkʌmpəni/ /kən-oʊnli/ /meɪk-ə/ /ˈpɑzətɪv/ /ˌkɑntrəˈbjuʃən-tə/ /səˈsaɪəti-j-ɪf-ɪt-əz-ɪn/ /ɡʊd/ /fəˈnænʃəl/ /hɛlθ/.<br><br>
