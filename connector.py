@@ -63,10 +63,21 @@ def apply_rules(word1, word2):
 
 def main():
     # input_text = input("Enter the phonetic symbols: ")
-    input_text = '''/ɪt/ /əz/ /tru/ /ðət/ /ɛks/-/ˈprɪzənərz/ /kən/ /bɪˈkʌm/ /ˈnɔrməl/, /prəˈdʌktɪv/ /ˈmɛmbərz/ /əv/ /səˈsaɪəti/. /aɪ/ /kəmˈplitli/ /əˈɡri/ /wɪð/ /ði/ /aɪˈdiə/ /ðət/ /əˈlaʊɪŋ/ /sʌʧ/ /ˈpipəl/ /tə/ /spik/ /tə/ /ˈtiˌneɪʤərz/ /əˈbaʊt/ /ðɛr/ /ɪkˈspɪriənsɪz/ /ɪz/ /ðə/ /bɛst/ /weɪ/ /tə/ /dɪˈskɜrɪʤ/ /ðəm/ /frəm/ /ˈbreɪkɪŋ/ /ðə/ /lɔ/.
-/ɪn/ /maɪ/ /əˈpɪnjən/, /ˈtiˌneɪʤərz/ /ər/ /mɔr/ /ˈlaɪkli/ /tʊ/ /ækˈsɛpt/ /ædˈvaɪs/ /frəm/ /ˈsʌmˌwʌn/ /hu/ /kən/ /spik/ /frəm/ /ɪkˈspɪriəns/. /rɪˈfɔrmd/ /əˈfɛndərz/ /kən/ /tɛl/ /jʌŋ/ /ˈpipəl/ /əˈbaʊt/ /haʊ/ /ðeɪ/ /bɪˈkʌm/ /ɪnˈvɑlvd/ /ɪn/ /kraɪm/, /ðə/ /ˈdeɪnʤərz/ /əv/ /ə/ /ˈkrɪmənəl/ /ˈlaɪfˌstaɪl/, /ənd/ /wɑt/ /laɪf/ /ɪn/ /ˈprɪzən/ /əz/ /ˈrɪli/ /laɪk/. /ðeɪ/ /kən/ /ˈɔlsoʊ/ /dɪˈspɛl/ /ˈɛni/ /aɪˈdiəz/ /ðət/ /ˈtiˌneɪʤərz/ /meɪ/ /həv/ /əˈbaʊt/ /ˈkrɪmənəlz/ /ˈlidɪŋ/ /ˈɡlæmərəs/ /lɪvz/. /waɪl/ /ˌædəˈlɛsənts/ /ər/ /ˈɔfən/ /ɪnˈdɪfrənt/ /tə/ /ˈɡaɪdəns/ /ˈɡɪvən/ /baɪ/ /ˈoʊldər/ /ˈpipəl/, /aɪ/ /ɪˈmæʤən/ /ðət/ /moʊst/ /əv/ /ðəm/ /wəd/ /bi/ /ɛkˈstrimli/ /kin/ /tə/ /hir/ /ˈstɔriz/ /frəm/ /ən/ /ɛks/-/əˈfɛndər/. /ðə/ /ˈvɪvəd/ /ənd/ /pərˈhæps/ /ˈʃɑkɪŋ/ /ˈneɪʧər/ /əv/ /ðiz/ /ˈstɔriz/ /ɪz/ /ˈlaɪkli/ /tə/ /həv/ /ə/ /ˈpaʊərfəl/ /ˈɪmpækt/.
-/ði/ /ɔlˈtɜrnətɪvz/ /tə/ /ˈjuzɪŋ/ /rɪˈfɔrmd/ /ˈkrɪmənəlz/ /tʊ/ /ˈɛʤəˌkeɪt/ /ˈtiˌneɪʤərz/ /əˈbaʊt/ /kraɪm/ /wəd/ /bi/ /mʌʧ/ /lɛs/ /ɪˈfɛktɪv/. /wʌn/ /ˈɑpʃən/ /wəd/ /bi/ /fər/ /pəˈlis/ /ˈɔfəsərz/ /tə/ /ˈvɪzət/ /skulz/ /ənd/ /tɔk/ /tə/ /jʌŋ/ /ˈpipəl/. /ðɪs/ /kəd/ /bi/ /ˈjusfəl/ /ɪn/ /tɜrmz/ /əv/ /ɪnˈfɔrmɪŋ/ /tinz/ /əˈbaʊt/ /wɑt/ /ˈhæpənz/ /tə/ /ˈlɔˌbreɪkərz/ /wɛn/ /ðeɪ/ /ər/ /kɑt/, /bət/ /jʌŋ/ /ˈpipəl/ /ər/ /ˈɔfən/ /rɪˈlʌktənt/ /tə/ /teɪk/ /ædˈvaɪs/ /frəm/ /ˈfɪɡjərz/ /əv/ /əˈθɔrəti/. /ə/ /ˈsɛkənd/ /ˈɑpʃən/ /wəd/ /bi/ /fər/ /skul/ /ˈtiʧərz/ /tə/ /spik/ /tə/ /ðɛr/ /ˈstudənts/ /əˈbaʊt/ /kraɪm/, /bət/ /aɪ/ /daʊt/ /ðət/ /ˈstudənts/ /wəd/ /si/ /ˈtiʧərz/ /əz/ /ˈkrɛdəbəl/ /ˈsɔrsəz/ /əv/ /ˌɪnfərˈmeɪʃən/ /əˈbaʊt/ /ðɪs/ /ˈtɑpɪk/. /ˈfaɪnəli/, /ˌɛʤəˈkeɪʃənəl/ /fɪlmz/ /maɪt/ /bi/ /ɪnˈfɔrmətɪv/, /bət/ /ðər/ /wəd/ /bi/ /noʊ/ /ˌɑpərˈtunəti/ /fər/ /jʌŋ/ /ˈpipəl/ /tʊ/ /ˌɪntəˈrækt/ /ənd/ /æsk/ /ˈkwɛsʧənz/.
-/ɪn/ /kənˈkluʒən/, /aɪ/ /ˈfʊli/ /səˈpɔrt/ /ðə/ /vju/ /ðət/ /ˈpipəl/ /hu/ /həv/ /tɜrnd/ /ðɛr/ /lɪvz/ /əˈraʊnd/ /ˈæftər/ /ˈsɜrvɪŋ/ /ə/ /ˈprɪzən/ /ˈsɛntəns/ /kəd/ /hɛlp/ /tə/ /dɪˈtɜr/ /ˈtiˌneɪʤərz/ /frəm/ /kəˈmɪtɪŋ/ /kraɪmz/.'''
+    input_text = '''/dɪr/ /sɜr/ /ɔr/ /ˈmædəm/,
+
+/aɪ/ /əm/ /ˈraɪtɪŋ/ /tə/ /meɪk/ /ən/ /ɪnˈʃʊrəns/ /kleɪm/ /fər/ /ən/ /ˈaɪtəm/ /aɪ/ /lɔst/ /waɪl/ /ɑn/ /ˈhɑləˌdeɪ/ /læst/ /wik/.
+
+/ði/ /ˈaɪtəm/ /əz/ /ə/ /ˈrɪˌstwɑʧ/ /ðət/ /aɪ/ /ɪnˈhɛrətɪd/ /frəm/ /maɪ/ /ˈɡrændˌfɑðər/. /boʊθ/ /ðə/ /wɑʧ/ /stræp/ /ənd/ /ðə/ /feɪs/ /ər/ /meɪd/ /əv/ /ɡoʊld/, /ənd/ /ðə/ /wɑʧ/ /ɪz/ /wɜrθ/ /ə/ /kənˈsɪdərəbəl/ /əˈmaʊnt/ /əv/ /ˈmʌni/. /ɪt/ /ˈɔlsoʊ/ /həz/ /ɡreɪt/ /ˌsɛntəˈmɛntəl/ /ˈvælju/.
+
+/aɪ/ /bɪˈliv/ /ðət/ /aɪ/ /məst/ /həv/ /lɛft/ /ðə/ /wɑʧ/ /ɑn/ /ðə/ /biʧ/ /ɪn/ /frʌnt/ /əv/ /ðə/ /hoʊˈtɛl/ /wɛr/ /aɪ/ /wəz/ /ˈsteɪɪŋ/. /aɪ/ /dɪd/ /rɪˈtɜrn/ /tə/ /sɜrʧ/ /fər/ /ɪt/, /bət/ /aɪ/ /kən/ /ˈoʊnli/ /əˈsum/ /ðət/ /ɪt/ /wəz/ /ˈkʌvərd/ /ɪn/ /sænd/ /ɔr/ /ɪt/ /həd/ /bɪn/ /wɑʃt/ /aʊt/ /tə/ /si/.
+
+/aɪ/ /tʊk/ /aʊt/ /ˌkɑmpriˈhɛnsɪv/ /ˈtrævəl/ /ɪnˈʃʊrəns/ /wɪð/ /jər/ /ˈkʌmpəni/, /ənd/ /maɪ/ /ˈkɑnˌtrækt/ /steɪts/ /ðət/ /ɔl/ /lɔst/ /ˈaɪtəmz/ /ər/ /ˈkʌvərd/. /aɪ/ /wəd/ /ˈðɛrˌfɔr/ /æsk/ /ðət/ /jʊ/ /ˌriˈvju/ /ði/ /əˈtæʧt/ /ˌɪnfərˈmeɪʃən/ /rəˈɡɑrdɪŋ/ /ði/ /ˈɛstəˌmeɪtəd/ /ˈvælju/ /əv/ /ðə/ /wɑʧ/ /ənd/ /ðət/ /jʊ/ /ˈprɑˌsɛs/ /maɪ/ /kleɪm/ /əz/ /ˈkwɪkli/ /əz/ /ˈpɑsəbəl/.
+
+/pliz/ /lɛt/ /mi/ /noʊ/ /ɪf/ /jʊ/ /ˌriˈkwaɪər/ /ˈɛni/ /ˈfɜrðər/ /ˌɪnfərˈmeɪʃən/.
+
+/jʊrz/ /ˈfeɪθfəli/,
+
+/ˈdɔɡi/ /ʒæŋ/'''
 
     # Replace suspension points ... by … to make it different from period
     input_text = input_text.replace("...", "…")
@@ -77,6 +88,8 @@ def main():
     
     paragraphs = input_text.split('\n')  # Split input into paragraphs
     for paragraph in paragraphs:
+        if len(paragraph) < 1:
+            continue # Skip empty lines
         # Split paragraph into sentences
         sentences = re.split(r'(?<=[.!?])\s+', paragraph)
         for sentence in sentences:
@@ -142,7 +155,7 @@ def main():
             connected_sentence.replace("…", "...")
             print(connected_sentence.strip())
             
-        # print()  # Empty line between paragraphs
+        print()  # Empty line between paragraphs
 
 
 if __name__ == "__main__":
