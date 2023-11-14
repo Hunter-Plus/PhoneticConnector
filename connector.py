@@ -63,11 +63,10 @@ def apply_rules(word1, word2):
 
 def main():
     # input_text = input("Enter the phonetic symbols: ")
-    input_text = '''/ə/ /laɪn/ /breɪk/ /wɪl/ /bi/ /ˈædəd/ /tə/ /ði/ /ɛnd/ /əv/ /iʧ/ /ˈsɛntəns/. /ˈpɪriəd/ /əz/ /ðə/ /moʊst/ /ˈkɑmən/ /ɛnd/ /əv/ /ˈsɛntənsəz/, /bət/ /ðə/ /səˈspɛnʃən/ /pɔɪnts/ /ˈɔlsoʊ/ /juz/ /ðə/ /seɪm/ /ˈsɪmbəl/. /haʊ/ /tə/ /meɪk/ /ðəm/ /kəˈrɛkt/? /wi/ /doʊnt/! /ðə/ /ˈproʊˌɡræm/ /wɪl/ /dʊ/ /ðə/ /ʤɑb/.
-/kwoʊˈteɪʃən/ /mɑrks/ /ər/ /əˈnʌðər/ "/ɡreɪ/ /zoʊn/" /bɪˈkəz/ /ðeɪ/ /ˈɔlsoʊ/ /həv/ /ə/ /ˈsɪŋɡəl/ /ˈvɜrʒən/ /wɪʧ/ /ˈjusəz/ /ðə/ /seɪm/ /ˈsɪmbəl/ /əz/ /ði/ /əˈpɑstrəfi/. /wi/ /kən/ /ˈprɑˌsɛs/ /boʊθ/ /ˈvɜrʒənz/ /ənd/ /juz/ /səm/ /trɪks/ /tə/ /ˈsɪmpləˌfaɪ/ /ðə/ /ˈproʊˌɡræmz/ /aɪ///oʊ/.
-/wɜrd/ /kəˈnɛkʃən/ /ˈkænɑt/ /ˈhæpən/ /əˈkrɔs/ /ˈkɑməz/, /ˈkoʊlənz/, /ənd/ /ˈbrækəts/. /ðɪs/ /ˈproʊˌɡræm/ /kən/ /ˈprɑˌsɛs/ /ðɛm/; /jʊ/ /ʃəd/ /juz/ /ðəm/ /kəˈrɛktli/ /ɪn/ /ði/ /ˈɪnˌpʊt/. /ðər/ /ər/ /tu/ /taɪps/ /əv/ /ˈbrækəts/: /ðə/ /lɛft/ /wʌnz/ /ənd/ /ðə/ /raɪt/ /wʌnz/ (/raʊnd/ /ɔr/ /skwɛr/). /ə/ /blæŋk/ /wɪl/ /əˈpɪr/ /ɪn/ /ðə/ /raɪt/ /pleɪs/ [/lɛft/ /ɔr/ /raɪt/] /ɪn/ /ði/ /ˈaʊtˌpʊt/.
-/ˈhaɪfənz/ /ər/ /ˈɔlˌweɪz/ /ɪn/-/bɪˈtwin/ /ˈlɛtərz/. /bət/ /ðə/ /ˈsɪmələr/ /ˌpʌŋkʧuˈeɪʃən/-/ˈdæʃɪz/ /ər/ /səmˈtaɪmz/ /ˈrɪtən/ /ðə/ /seɪm/ /əz/ /ˈhaɪfənz/.
-/ðɪs/ /ɪz/ /ðə/ /moʊst/ /ɪˈfɛktɪv/ /ˈproʊˌɡræm/.../ðæt/ /aɪ/ /meɪd/ /fər/ /ju/."/ɡoʊ/ /fər/ /ɪt/," /ɪt/ /sɛd/, '/lɛt/ /tɛkˈnɑləʤi/ /dʊ/ /ðə/ /ˈminɪŋləs/ /ʤɑbz/'.'''
+    input_text = '''/ɪt/ /əz/ /tru/ /ðət/ /ɛks/-/ˈprɪzənərz/ /kən/ /bɪˈkʌm/ /ˈnɔrməl/, /prəˈdʌktɪv/ /ˈmɛmbərz/ /əv/ /səˈsaɪəti/. /aɪ/ /kəmˈplitli/ /əˈɡri/ /wɪð/ /ði/ /aɪˈdiə/ /ðət/ /əˈlaʊɪŋ/ /sʌʧ/ /ˈpipəl/ /tə/ /spik/ /tə/ /ˈtiˌneɪʤərz/ /əˈbaʊt/ /ðɛr/ /ɪkˈspɪriənsɪz/ /ɪz/ /ðə/ /bɛst/ /weɪ/ /tə/ /dɪˈskɜrɪʤ/ /ðəm/ /frəm/ /ˈbreɪkɪŋ/ /ðə/ /lɔ/.
+/ɪn/ /maɪ/ /əˈpɪnjən/, /ˈtiˌneɪʤərz/ /ər/ /mɔr/ /ˈlaɪkli/ /tʊ/ /ækˈsɛpt/ /ædˈvaɪs/ /frəm/ /ˈsʌmˌwʌn/ /hu/ /kən/ /spik/ /frəm/ /ɪkˈspɪriəns/. /rɪˈfɔrmd/ /əˈfɛndərz/ /kən/ /tɛl/ /jʌŋ/ /ˈpipəl/ /əˈbaʊt/ /haʊ/ /ðeɪ/ /bɪˈkʌm/ /ɪnˈvɑlvd/ /ɪn/ /kraɪm/, /ðə/ /ˈdeɪnʤərz/ /əv/ /ə/ /ˈkrɪmənəl/ /ˈlaɪfˌstaɪl/, /ənd/ /wɑt/ /laɪf/ /ɪn/ /ˈprɪzən/ /əz/ /ˈrɪli/ /laɪk/. /ðeɪ/ /kən/ /ˈɔlsoʊ/ /dɪˈspɛl/ /ˈɛni/ /aɪˈdiəz/ /ðət/ /ˈtiˌneɪʤərz/ /meɪ/ /həv/ /əˈbaʊt/ /ˈkrɪmənəlz/ /ˈlidɪŋ/ /ˈɡlæmərəs/ /lɪvz/. /waɪl/ /ˌædəˈlɛsənts/ /ər/ /ˈɔfən/ /ɪnˈdɪfrənt/ /tə/ /ˈɡaɪdəns/ /ˈɡɪvən/ /baɪ/ /ˈoʊldər/ /ˈpipəl/, /aɪ/ /ɪˈmæʤən/ /ðət/ /moʊst/ /əv/ /ðəm/ /wəd/ /bi/ /ɛkˈstrimli/ /kin/ /tə/ /hir/ /ˈstɔriz/ /frəm/ /ən/ /ɛks/-/əˈfɛndər/. /ðə/ /ˈvɪvəd/ /ənd/ /pərˈhæps/ /ˈʃɑkɪŋ/ /ˈneɪʧər/ /əv/ /ðiz/ /ˈstɔriz/ /ɪz/ /ˈlaɪkli/ /tə/ /həv/ /ə/ /ˈpaʊərfəl/ /ˈɪmpækt/.
+/ði/ /ɔlˈtɜrnətɪvz/ /tə/ /ˈjuzɪŋ/ /rɪˈfɔrmd/ /ˈkrɪmənəlz/ /tʊ/ /ˈɛʤəˌkeɪt/ /ˈtiˌneɪʤərz/ /əˈbaʊt/ /kraɪm/ /wəd/ /bi/ /mʌʧ/ /lɛs/ /ɪˈfɛktɪv/. /wʌn/ /ˈɑpʃən/ /wəd/ /bi/ /fər/ /pəˈlis/ /ˈɔfəsərz/ /tə/ /ˈvɪzət/ /skulz/ /ənd/ /tɔk/ /tə/ /jʌŋ/ /ˈpipəl/. /ðɪs/ /kəd/ /bi/ /ˈjusfəl/ /ɪn/ /tɜrmz/ /əv/ /ɪnˈfɔrmɪŋ/ /tinz/ /əˈbaʊt/ /wɑt/ /ˈhæpənz/ /tə/ /ˈlɔˌbreɪkərz/ /wɛn/ /ðeɪ/ /ər/ /kɑt/, /bət/ /jʌŋ/ /ˈpipəl/ /ər/ /ˈɔfən/ /rɪˈlʌktənt/ /tə/ /teɪk/ /ædˈvaɪs/ /frəm/ /ˈfɪɡjərz/ /əv/ /əˈθɔrəti/. /ə/ /ˈsɛkənd/ /ˈɑpʃən/ /wəd/ /bi/ /fər/ /skul/ /ˈtiʧərz/ /tə/ /spik/ /tə/ /ðɛr/ /ˈstudənts/ /əˈbaʊt/ /kraɪm/, /bət/ /aɪ/ /daʊt/ /ðət/ /ˈstudənts/ /wəd/ /si/ /ˈtiʧərz/ /əz/ /ˈkrɛdəbəl/ /ˈsɔrsəz/ /əv/ /ˌɪnfərˈmeɪʃən/ /əˈbaʊt/ /ðɪs/ /ˈtɑpɪk/. /ˈfaɪnəli/, /ˌɛʤəˈkeɪʃənəl/ /fɪlmz/ /maɪt/ /bi/ /ɪnˈfɔrmətɪv/, /bət/ /ðər/ /wəd/ /bi/ /noʊ/ /ˌɑpərˈtunəti/ /fər/ /jʌŋ/ /ˈpipəl/ /tʊ/ /ˌɪntəˈrækt/ /ənd/ /æsk/ /ˈkwɛsʧənz/.
+/ɪn/ /kənˈkluʒən/, /aɪ/ /ˈfʊli/ /səˈpɔrt/ /ðə/ /vju/ /ðət/ /ˈpipəl/ /hu/ /həv/ /tɜrnd/ /ðɛr/ /lɪvz/ /əˈraʊnd/ /ˈæftər/ /ˈsɜrvɪŋ/ /ə/ /ˈprɪzən/ /ˈsɛntəns/ /kəd/ /hɛlp/ /tə/ /dɪˈtɜr/ /ˈtiˌneɪʤərz/ /frəm/ /kəˈmɪtɪŋ/ /kraɪmz/.'''
 
     # Replace suspension points ... by … to make it different from period
     input_text = input_text.replace("...", "…")
@@ -81,6 +80,8 @@ def main():
         # Split paragraph into sentences
         sentences = re.split(r'(?<=[.!?])\s+', paragraph)
         for sentence in sentences:
+            if len(sentence) < 1:
+                continue # Skip empty lines
             connected_sentence = ""
             words_and_punctuations = sentence.split()
             unclosed_quotation_marks = False # The indicator to show there is a left "
