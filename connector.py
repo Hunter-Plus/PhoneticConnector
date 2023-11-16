@@ -1,7 +1,7 @@
 import re
 
 # Define
-vowels = ['i', 'ɪ', 'ɛ', 'æ', 'ə', 'ʌ', 'u', 'ʊ', 'ɔ', 'ɑ', 'e', 'a', 'o', 'ɝ', 'ɚ'] # Also include the first symbol of all the dipthongs and r-colored vowels
+vowels = ['i', 'ɪ', 'ɛ', 'æ', 'ə', 'ʌ', 'u', 'ʊ', 'ɔ', 'ɑ', 'e', 'a', 'o', 'ɝ', 'ɚ', 'ɜ'] # Also include the first symbol of all the dipthongs and r-colored vowels
 # e for eɪ, a for aɪ and aʊ, o for oʊ
 consonants = ['p', 'b', 't', 'd', 'k', 'g', 'ɡ', 'm', 'n', 'ŋ', 'f', 'v',
               'θ', 'ð', 's', 'z', 'ʃ', 'ʒ', 'ʧ', 'ʤ', 'h', 'r', 'l', 'j', 'w']
