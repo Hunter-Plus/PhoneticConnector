@@ -104,6 +104,7 @@ def main():
                                 current_word_or_punctuation, words_and_punctuations[j])
                             if connected_word != current_word_or_punctuation:  # Two words are connected
                                 current_word_or_punctuation = connected_word
+                                i = j
                             else:
                                 break
                         else:
